@@ -1,2 +1,3 @@
-2023/05/02-10:42:19.747 255c Creating DB C:\Users\Sanel\AppData\Local\Temp\flutter_tools.c8f1d8b8\flutter_tools_chrome_device.819d2718\Default\Sync Data\LevelDB since it was missing.
-2023/05/02-10:42:22.702 255c Reusing MANIFEST C:\Users\Sanel\AppData\Local\Temp\flutter_tools.c8f1d8b8\flutter_tools_chrome_device.819d2718\Default\Sync Data\LevelDB/MANIFEST-000001
+2023/05/02-11:48:31.980 1a58 Reusing MANIFEST C:\Users\Sanel\AppData\Local\Temp\flutter_tools.a6c19450\flutter_tools_chrome_device.c24b9a30\Default\Sync Data\LevelDB/MANIFEST-000001
+2023/05/02-11:48:31.981 1a58 Recovering log #3
+2023/05/02-11:48:31.982 1a58 Reusing old log C:\Users\Sanel\AppData\Local\Temp\flutter_tools.a6c19450\flutter_tools_chrome_device.c24b9a30\Default\Sync Data\LevelDB/000003.log 
