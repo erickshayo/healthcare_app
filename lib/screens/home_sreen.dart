@@ -2,11 +2,24 @@ import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
   List symptoms = ["Temperature", "Snuffle", "Fever", "Cough", "Cold"];
+
   List imgs = [
     "1.jpg",
     "2.jpg",
     "3.jpg",
     "4.jpg",
+  ];
+  List doctors = [
+    "Alex",
+    "Sanel",
+    "Erick",
+    "Jack",
+  ];
+  List proffession = [
+    "Therapist",
+    "Cardiologist",
+    "Dietician",
+    "Phyisologist",
   ];
 
   @override
@@ -224,7 +237,41 @@ class HomeScreen extends StatelessWidget {
                       CircleAvatar(
                         radius: 35,
                         backgroundImage: AssetImage("images/${imgs[index]}"),
-                      )
+                      ),
+                      StreamBuilder<Object>(
+                          stream: null,
+                          builder: (context, snapshot) {
+                            return Text(
+                              doctors[index],
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.black54,
+                              ),
+                            );
+                          }),
+                      Text(
+                        proffession[index],
+                        style: TextStyle(
+                          color: Colors.black45,
+                        ),
+                      ),
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.star,
+                            color: Colors.amber,
+                          ),
+                          Text(
+                            "4.9",
+                            style: TextStyle(
+                              color: Colors.black45,
+                            ),
+                          )
+                        ],
+                      ),
                     ],
                   ),
                 ),
