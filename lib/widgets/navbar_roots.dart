@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:healthcare_app/screens/home_sreen.dart';
+import 'package:healthcare_app/screens/schedule_scree.dart';
+import 'package:healthcare_app/screens/setting_screen.dart';
 
 class NavBarRoots extends StatefulWidget {
   @override
@@ -12,8 +14,8 @@ class _NavBarRootsState extends State<NavBarRoots> {
   final _screens = [
     HomeScreen(), //Home screen
     Container(), //Messages Screen
-    Container(), //Schedule Screen
-    Container(), //Setting Screen
+    ScheduleScreen(), //Schedule Screen
+    SettingsScreen(), //Setting Screen
   ];
 
   @override
