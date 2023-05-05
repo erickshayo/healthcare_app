@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:healthcare_app/widgets/upcoming_schedule.dart';
 
 class ScheduleScreen extends StatefulWidget {
   @override
@@ -9,8 +10,11 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
   int _buttonIndex = 0;
 
   final _scheduleWidgets = [
+    // Upcoming Widget
+    UpcomingSchedule(), 
+    // Completed Widget
     Container(),
-    Container(),
+    // Canceled Widget
     Container(),
   ];
   @override
@@ -43,12 +47,18 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      setState(() {
+                        _buttonIndex = 0;
+                      });
+                    },
                     child: Container(
                       padding:
                           EdgeInsets.symmetric(vertical: 12, horizontal: 25),
                       decoration: BoxDecoration(
-                        // color: Color(value)
+                        color: _buttonIndex == 0
+                            ? Color(0xFF7165D6)
+                            : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Text(
@@ -56,14 +66,69 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
-                          // color: 
+                          color:
+                              _buttonIndex == 0 ? Colors.white : Colors.black38,
                         ),
                       ),
                     ),
-                  )
+                  ),
+                  InkWell(
+                    onTap: () {
+                      setState(() {
+                        _buttonIndex = 1;
+                      });
+                    },
+                    child: Container(
+                      padding:
+                          EdgeInsets.symmetric(vertical: 12, horizontal: 25),
+                      decoration: BoxDecoration(
+                        color: _buttonIndex == 1
+                            ? Color(0xFF7165D6)
+                            : Colors.transparent,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Text(
+                        "Completed",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                          color:
+                              _buttonIndex == 1 ? Colors.white : Colors.black38,
+                        ),
+                      ),
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      setState(() {
+                        _buttonIndex = 2;
+                      });
+                    },
+                    child: Container(
+                      padding:
+                          EdgeInsets.symmetric(vertical: 12, horizontal: 25),
+                      decoration: BoxDecoration(
+                        color: _buttonIndex == 2
+                            ? Color(0xFF7165D6)
+                            : Colors.transparent,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Text(
+                        "Canceled",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                          color:
+                              _buttonIndex == 2 ? Colors.white : Colors.black38,
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
-            )
+            ),
+            SizedBox(height: 30),
+            _scheduleWidgets[_buttonIndex],
           ],
         ),
       ),
