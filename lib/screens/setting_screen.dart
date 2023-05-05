@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:healthcare_app/screens/welcome_screen.dart';
 
 class SettingsScreen extends StatelessWidget {
   @override
@@ -38,7 +39,7 @@ class SettingsScreen extends StatelessWidget {
             ),
             Divider(height: 50),
             ListTile(
-              onTap: (){},
+              onTap: () {},
               leading: Container(
                 padding: EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -62,7 +63,7 @@ class SettingsScreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             ListTile(
-              onTap: (){},
+              onTap: () {},
               leading: Container(
                 padding: EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -86,7 +87,7 @@ class SettingsScreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             ListTile(
-              onTap: (){},
+              onTap: () {},
               leading: Container(
                 padding: EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -110,7 +111,7 @@ class SettingsScreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             ListTile(
-              onTap: (){},
+              onTap: () {},
               leading: Container(
                 padding: EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -134,7 +135,7 @@ class SettingsScreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             ListTile(
-              onTap: (){},
+              onTap: () {},
               leading: Container(
                 padding: EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -159,7 +160,14 @@ class SettingsScreen extends StatelessWidget {
             Divider(height: 40),
             SizedBox(height: 20),
             ListTile(
-              onTap: (){},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => WelcomeScreen(),
+                  ),
+                );
+              },
               leading: Container(
                 padding: EdgeInsets.all(10),
                 decoration: BoxDecoration(
