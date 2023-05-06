@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:healthcare_app/screens/home_sreen.dart';
+import 'package:healthcare_app/screens/messages_screen.dart';
 import 'package:healthcare_app/screens/schedule_scree.dart';
 import 'package:healthcare_app/screens/setting_screen.dart';
 
@@ -13,7 +14,7 @@ class _NavBarRootsState extends State<NavBarRoots> {
   int _selectedIndex = 0;
   final _screens = [
     HomeScreen(), //Home screen
-    Container(), //Messages Screen
+    MessagesScreen(), //Messages Screen
     ScheduleScreen(), //Schedule Screen
     SettingsScreen(), //Setting Screen
   ];
