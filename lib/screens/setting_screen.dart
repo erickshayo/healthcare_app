@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:healthcare_app/screens/welcome_screen.dart';
+import 'package:healthcare/screens/welcome_screen.dart';
 
 class SettingsScreen extends StatelessWidget {
   @override

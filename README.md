@@ -1,4 +1,4 @@
-# healthcare_app
+# healthcare
 
 A new Flutter project.
 

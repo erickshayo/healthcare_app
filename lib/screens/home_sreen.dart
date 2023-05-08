@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:healthcare_app/screens/appointment_screen.dart';
+import 'package:healthcare/screens/appointment_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   List symptoms = ["Temperature", "Snuffle", "Fever", "Cough", "Cold"];

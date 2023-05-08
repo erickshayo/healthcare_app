@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:healthcare_app/widgets/chat_sample.dart';
+import 'package:healthcare/widgets/chat_sample.dart';
 
 class ChatScreen extends StatelessWidget {
   List imgs = [
@@ -121,10 +121,14 @@ class ChatScreen extends StatelessWidget {
               ),
             ),
             Spacer(),
-            Padding(padding: EdgeInsets.only(right: 10),
-            child: Icon(Icons.send,
-            size: 30,
-            color: Color(0xFF7165D6),),),
+            Padding(
+              padding: EdgeInsets.only(right: 10),
+              child: Icon(
+                Icons.send,
+                size: 30,
+                color: Color(0xFF7165D6),
+              ),
+            ),
           ],
         ),
       ),

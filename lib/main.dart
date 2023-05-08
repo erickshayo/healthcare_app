@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:healthcare_app/screens/welcome_screen.dart';
+import 'package:healthcare/screens/splash_screen.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -10,8 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: true,
-      home: WelcomeScreen(),
-
+      home: Splash(),
     );
   }
 }

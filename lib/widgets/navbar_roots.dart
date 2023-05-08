@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:healthcare_app/screens/home_sreen.dart';
-import 'package:healthcare_app/screens/messages_screen.dart';
-import 'package:healthcare_app/screens/schedule_scree.dart';
-import 'package:healthcare_app/screens/setting_screen.dart';
+import 'package:healthcare/screens/home_sreen.dart';
+import 'package:healthcare/screens/messages_screen.dart';
+import 'package:healthcare/screens/schedule_scree.dart';
+import 'package:healthcare/screens/setting_screen.dart';
 
 class NavBarRoots extends StatefulWidget {
   @override

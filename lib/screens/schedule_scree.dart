@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:healthcare_app/widgets/canceled_schedule.dart';
-import 'package:healthcare_app/widgets/completed_schedule.dart';
-import 'package:healthcare_app/widgets/upcoming_schedule.dart';
+import 'package:healthcare/widgets/canceled_schedule.dart';
+import 'package:healthcare/widgets/completed_schedule.dart';
+import 'package:healthcare/widgets/upcoming_schedule.dart';
 
 class ScheduleScreen extends StatefulWidget {
   @override
@@ -13,7 +13,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
 
   final _scheduleWidgets = [
     // Upcoming Widget
-    UpcomingSchedule(), 
+    UpcomingSchedule(),
     // Completed Widget
     CompletedSchedule(),
     // Canceled Widget
