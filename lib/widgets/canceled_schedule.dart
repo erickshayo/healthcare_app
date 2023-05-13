@@ -290,6 +290,5 @@ class CanceledSchedule extends StatelessWidget {
         ],
       ),
     );
-    ;
   }
 }

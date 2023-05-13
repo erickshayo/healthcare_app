@@ -290,6 +290,5 @@ class CompletedSchedule extends StatelessWidget {
         ],
       ),
     );
-    ;
   }
 }
