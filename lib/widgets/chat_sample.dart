@@ -41,7 +41,7 @@ class ChatSample extends StatelessWidget {
                   right: 20,
                 ),
                 decoration: BoxDecoration(
-                  color: Color(0xFF7165D6),
+                  color: Colors.blue,
                 ),
                 child: Text(
                   "Hello Doctor, Are you there? ",

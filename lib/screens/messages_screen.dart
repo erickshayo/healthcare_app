@@ -85,7 +85,7 @@ class MessagesScreen extends StatelessWidget {
                   ),
                   Icon(
                     Icons.search,
-                    color: Color(0xFF7165D6),
+                    color: Colors.blue,
                   ),
                 ],
               ),

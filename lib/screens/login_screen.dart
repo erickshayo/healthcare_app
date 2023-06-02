@@ -66,7 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: SizedBox(
                   width: double.infinity,
                   child: Material(
-                    color: Color(0xFF7165D6),
+                    color: Colors.blue,
                     borderRadius: BorderRadius.circular(10),
                     child: InkWell(
                       onTap: () {
@@ -119,7 +119,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
-                        color: Color(0xFF7165D6),
+                        color: Colors.blue,
                       ),
                     ),
                   ),

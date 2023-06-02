@@ -39,12 +39,12 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "Hello Alex",
+                  "Welcome",
                   style: TextStyle(fontSize: 35, fontWeight: FontWeight.w500),
                 ),
                 CircleAvatar(
                   radius: 25,
-                  backgroundImage: AssetImage("images/1.jpg"),
+                  backgroundImage: AssetImage("images/logo.jpg"),
                 )
               ],
             ),
@@ -58,7 +58,7 @@ class HomeScreen extends StatelessWidget {
                 child: Container(
                   padding: EdgeInsets.all(20),
                   decoration: BoxDecoration(
-                      color: Color(0xFF7165D6),
+                      color: Colors.blue,
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: [
                         BoxShadow(
@@ -78,7 +78,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         child: Icon(
                           Icons.add,
-                          color: Color(0xFF7165D6),
+                          color: Colors.blue,
                           size: 35,
                         ),
                       ),
@@ -127,7 +127,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         child: Icon(
                           Icons.home_filled,
-                          color: Color(0xFF7165D6),
+                          color: Colors.blue,
                           size: 35,
                         ),
                       ),

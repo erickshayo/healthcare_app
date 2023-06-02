@@ -88,7 +88,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               child: SizedBox(
                 width: double.infinity,
                 child: Material(
-                  color: Color(0xFF7165D6),
+                  color: Colors.blue,
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
                     onTap: () {
@@ -140,7 +140,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFF7165D6),
+                      color: Colors.blue,
                     ),
                   ),
                 ),
