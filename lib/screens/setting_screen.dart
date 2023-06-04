@@ -22,22 +22,21 @@ class SettingsScreen extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            SizedBox(height: 30),
-            ListTile(
-              leading: CircleAvatar(
-                radius: 30,
-                backgroundImage: AssetImage("images/1.jpg"),
-              ),
-              title: Text(
-                "Dr. Doctor name",
-                style: TextStyle(
-                  fontWeight: FontWeight.w500,
-                  fontSize: 25,
-                ),
-              ),
-              subtitle: Text("profile"),
-            ),
-            Divider(height: 50),
+            // ListTile(
+            //   leading: CircleAvatar(
+            //     radius: 30,
+            //     backgroundImage: AssetImage("images/1.jpg"),
+            //   ),
+            //   title: Text(
+            //     "Dr. Doctor name",
+            //     style: TextStyle(
+            //       fontWeight: FontWeight.w500,
+            //       fontSize: 25,
+            //     ),
+            //   ),
+            //   subtitle: Text("profile"),
+            // ),
+            Divider(height: 30),
             ListTile(
               onTap: () {},
               leading: Container(

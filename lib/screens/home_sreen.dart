@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:healthcare/screens/appointment_screen.dart';
-
+import 'package:healthcare/screens/clinic_visit_screen.dart';
+import 'package:healthcare/screens/home_visits_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   List symptoms = ["Temperature", "Snuffle", "Fever", "Cough", "Cold"];
@@ -54,7 +55,13 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ClinicVisit(),
+                      ));
+                },
                 child: Container(
                   padding: EdgeInsets.all(20),
                   decoration: BoxDecoration(
@@ -103,7 +110,13 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => HomeVisit(),
+                      ));
+                },
                 child: Container(
                   padding: EdgeInsets.all(20),
                   decoration: BoxDecoration(
