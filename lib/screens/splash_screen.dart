@@ -18,7 +18,7 @@ class Splash extends StatelessWidget {
               style: TextStyle(
                 fontSize: 64,
                 fontWeight: FontWeight.bold,
-                color: Colors.deepPurple,
+                color: Colors.blue,
               ),
             )
           ],

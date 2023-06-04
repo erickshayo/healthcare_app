@@ -80,7 +80,7 @@ class AppointmentScreen extends StatelessWidget {
                         ),
                         SizedBox(height: 15),
                         Text(
-                          "Dr. Doctor Name",
+                          "", // call the doctors name here
                           style: TextStyle(
                             fontSize: 23,
                             fontWeight: FontWeight.w500,
@@ -99,29 +99,39 @@ class AppointmentScreen extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Container(
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                color: Color(0xFF9F97E2),
-                                shape: BoxShape.circle,
-                              ),
-                              child: Icon(
-                                Icons.call,
-                                color: Colors.white,
-                                size: 25,
+                            InkWell(
+                              onTap: () {
+                                
+                              },
+                              child: Container(
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Icon(
+                                  Icons.call,
+                                  color: Colors.white,
+                                  size: 25,
+                                ),
                               ),
                             ),
                             SizedBox(width: 20),
-                            Container(
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                color: Color(0xFF9F97E2),
-                                shape: BoxShape.circle,
-                              ),
-                              child: Icon(
-                                Icons.chat,
-                                color: Colors.white,
-                                size: 25,
+                            InkWell(
+                              onTap: () {
+                                
+                              },
+                              child: Container(
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Icon(
+                                  Icons.chat,
+                                  color: Colors.white,
+                                  size: 25,
+                                ),
                               ),
                             ),
                           ],
@@ -160,7 +170,7 @@ class AppointmentScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 5),
                   Text(
-                    "Lorem Ipsum is  simply dummy text of the printing and typesetting industry",
+                    "The best doctor available at our place, Feel free to be served here ",
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.black54,

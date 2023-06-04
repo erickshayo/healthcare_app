@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:healthcare/screens/forget_password_screen.dart';
 import 'package:healthcare/screens/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -116,6 +117,36 @@ class _LoginScreenState extends State<LoginScreen> {
                     },
                     child: Text(
                       "Create Account",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blue,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Forgot you're password?",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black54,
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ForgetPassword(),
+                          ));
+                    },
+                    child: Text(
+                      "CLICK HERE",
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,

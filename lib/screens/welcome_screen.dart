@@ -44,16 +44,27 @@ class WelcomeScreen extends StatelessWidget {
                 ),
             SizedBox(height: 80),
             Text(
-              "Doctors Appointment",
+              "HealthCare App",
               style: TextStyle(
                 color: Colors.blue,
                 fontSize: 35,
                 fontWeight: FontWeight.bold,
-                letterSpacing: 1,
+                letterSpacing: 2,
                 wordSpacing: 2,
               ),
             ),
             SizedBox(height: 40),
+            Text(
+              "Doctors Appointment",
+              style: TextStyle(
+                color: Colors.black54,
+                fontSize: 18,
+                fontWeight: FontWeight.w500,
+                letterSpacing: 1,
+                wordSpacing: 2,
+              ),
+            ),
+            SizedBox(height: 5),
             Text(
               "Choose Your Doctor",
               style: TextStyle(
