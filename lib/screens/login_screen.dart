@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:healthcare/screens/forget_password_screen.dart';
 import 'package:healthcare/screens/signup_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:healthcare/screens/forget_password_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -9,6 +11,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+
   bool passToggle = true;
   @override
   Widget build(BuildContext context) {

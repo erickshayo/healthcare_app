@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Contact extends StatefulWidget {
   const Contact({super.key});
@@ -103,7 +104,7 @@ class _ContactState extends State<Contact> {
             ),
             SizedBox(height: 20),
             ListTile(
-              onTap: () {},
+              onTap: () { },
               leading: Container(
                 padding: EdgeInsets.all(10),
                 decoration: BoxDecoration(

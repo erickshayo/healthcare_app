@@ -6,6 +6,10 @@ import 'package:healthcare/screens/feed_back_screen.dart';
 import 'package:healthcare/screens/privacy_policy_screen.dart';
 import 'package:healthcare/screens/welcome_screen.dart';
 
+import 'package:firebase_auth/firebase_auth.dart';
+// import 'package:healthcare/auth.dart';
+
+
 class SettingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -212,9 +216,9 @@ class SettingsScreen extends StatelessWidget {
               ),
               trailing: Icon(Icons.arrow_forward_ios_rounded),
             ),
-
-            Divider(height: 40),
-            SizedBox(height: 20),
+            SizedBox(height: 130),
+            Divider(height: 10, thickness: 2,),
+            SizedBox(height: 10),
             ListTile(
               onTap: () {
                 Navigator.push(
