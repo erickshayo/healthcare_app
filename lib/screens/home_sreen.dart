@@ -5,7 +5,12 @@ import 'package:healthcare/screens/appointment_screen.dart';
 import 'package:healthcare/screens/clinic_visit_screen.dart';
 import 'package:healthcare/screens/home_visits_screen.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
   List symptoms = ["Temperature", "Snuffle", "Fever", "Cough", "Cold"];
 
   List imgs = [
@@ -14,12 +19,14 @@ class HomeScreen extends StatelessWidget {
     "3.jpg",
     "4.jpg",
   ];
+
   List doctors = [
     "Alex",
     "Sanel",
     "Erick",
     "Jack",
   ];
+
   List proffession = [
     "Therapist",
     "Cardiologist",

@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:healthcare/screens/forget_password_screen.dart';
 import 'package:healthcare/screens/signup_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:healthcare/screens/forget_password_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -73,13 +72,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(10),
                     child: InkWell(
-                      onTap: () {
-                        // Navigator.push(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //       builder: (context) => LoginScreen(),
-                        //     ));
-                      },
+                      onTap: () { },
                       child: Padding(
                         padding:
                             EdgeInsets.symmetric(vertical: 15, horizontal: 40),
